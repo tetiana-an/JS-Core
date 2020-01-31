@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="div1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="form_buttons">
+            <form action="" name="buttons">
+                <input type="button" value="edit" id="edit">
+                <input type="button" value="style" id="style">
+            </form>
+        </div>
+        <div id="div2">
+            <form action="" name="f1" id="f1">
+                <textarea name="area" id="textarea" cols="60" rows="10"></textarea><br>
+                <input type="button" value="add" id="add">
+                <input type="button" value="save" id="save">
+            </form>
+        </div>
+        <div id="div3">
+            <p>Font Size:</p>
+            <form action="" name="f2" id="f2">
+                <input type="radio" value="12px" id="tr" name="tr">12px
+                <input type="radio" value="14px" id="tr" name="tr">14px
+                <input type="radio" value="16px" id="tr" name="tr" checked>16px
+                <input type="radio" value="18px" id="tr" name="tr">18px
+                <input type="radio" value="20px" id="tr" name="tr">20px
+            </form>
+            <p>Font Family:</p>
+            <form action="" name="f3" id="f3">
+                <select name="fontFamily" id="fontFam">
+                    <option>Choose options</option>
+                    <option value="cursive">cursive</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sans-serif">sans-serif</option>
+                </select>
+            </form>
+            <p>Colors:</p>
+            <form action="" name="f4" id="f4">
+                <input type="button" value="Color of text" id="color">
+                <input type="button" value="Background color" id="bgColor">
+            </form>
+            <div id="wrapper">
+                <div id="box" style="background-color: tomato;"></div>
+                <div id="box" style="background-color: lightskyblue;"></div>
+                <div id="box" style="background-color: greenyellow;"></div>
+                <div id="box" style="background-color: black;"></div>
+                <div id="box" style="background-color: gold"></div>
+                <div id="box" style="background-color: silver"></div>
+                <div id="box" style="background-color: white"></div>
+                <div id="box" style="background-color: violet"></div>
+                <div id="box" style="background-color: aqua;"></div>
+            </div>
+            <p>Style:</p>
+            <form action="" name="f5" id="f5">
+                <input type="checkbox" value="bold" id="ch">Bold text
+                <input type="checkbox" value="italic" id="ch1">Cursive text
+            </form>
+        </div>
+    </div>
+    <div id="div4">
+        <p style="font-size: 25px;">Choose what you want:</p>
+        <div id="radiobt">
+            <input type="radio" id="table" name="tr1"> table
+            <input type="radio" id="list" name="tr1"> list
+        </div>
+        <form action="" name="f6" id="f6">
+            <div class="group">
+                <label id="label">Count TR:</label>
+                <input type="text" required size="82" placeholder="Count TR:" id="tt1" class="inp_table">
+            </div>
+            <div class="group">
+                <label id="label">Count TD:</label>
+                <input type="text" required size="82" placeholder="Count TD:" id="tt2" class="inp_table">
+            </div>
+            <p style="font-size: 18px;">Add style to your table</p>
+            <div class="group">
+                <label id="label">Width of TD:</label>
+                <input type="text" required size="82" placeholder="Width of TD:" id="tt3" class="inp_table">
+            </div>
+            <div class="group">
+                <label id="label">Height of TD:</label>
+                <input type="text" required size="82" placeholder="Height of TD:" id="tt4" class="inp_table">
+            </div>
+            <div class="group1_all">
+                <div class="group1">
+                    <label id="label1">Width of border:</label>
+                    <input type="text" required size="10" placeholder="Width:" id="tt5" class="inp_table">
+                </div>
+                <div class="group1">
+                    <label id="label1">Type of border:</label>
+                    <select name="borderTypes" id="borderType" class="brd_sel">
+                        <option value="solid">solid</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="dotted">dotted</option>
+                    </select>
+                </div>
+                <div class="group1">
+                    <label id="label1">Color of border:</label>
+                    <select name="borderColors" id="borderColor" class="brd_sel">
+                        <option value="black">black</option>
+                        <option value="pink">pink</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <input type="button" value="Create table" id="createTable" class="create">
+        </form>
+        <form action="" id="f7">
+            <div class="group">
+                <label id="label">Count Li:</label>
+                <input type="text" required size="82" placeholder="Count Li:" id="tt7" class="inp_table">
+            </div>
+            <div class="group">
+                <label id="label">Type of marks:</label>
+                <select name="" id="typeMarks">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                    <option value="armenian">armenian</option>
+                </select>
+            </div>
+            <input type="button" value="Create list" id="createList" class="create">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
